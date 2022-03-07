@@ -1,7 +1,9 @@
+import { Pagination } from 'components/Pagination';
+
 const List: React.FC = () => {
   return (
     <div>
-      <h1>List</h1>
+      <Pagination />
     </div>
   );
 };

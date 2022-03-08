@@ -1,4 +1,5 @@
 // import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import { ReactComponent as GitHubIcon } from '../../assets/img/github.svg';
 import './styles.css';
 const NavBar: React.FC = () => {
@@ -6,7 +7,9 @@ const NavBar: React.FC = () => {
     <header>
       <nav className='container'>
         <div className='dsmovie-nav-content'>
-          <h1>DSMovie</h1>
+          <Link to={'/'}>
+            <h1>DSMovie</h1>
+          </Link>
           <a
             href='https://github.com/devsuperior'
             target='_blank'

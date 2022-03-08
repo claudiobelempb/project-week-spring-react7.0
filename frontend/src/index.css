@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #4d41c0;
+  --color-primary: #e30813;
 }
 
 * {
@@ -9,7 +9,7 @@
 
 html,
 body {
-  background-color: #e5e5e5;
+  background-color: #000000;
 }
 
 a,

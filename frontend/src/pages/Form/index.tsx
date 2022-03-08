@@ -1,3 +1,5 @@
+import { FaCheck, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 const Form: React.FC = () => {
@@ -22,25 +24,36 @@ const Form: React.FC = () => {
         <form className='dsmovie-form'>
           <div className='form-group dsmovie-form-group'>
             <label htmlFor='email'>Informe seu email</label>
-            <input type='email' className='form-control' id='email' />
+            <input
+              type='email'
+              className='form-control'
+              id='email'
+              placeholder='email@email.com'
+            />
           </div>
+
           <div className='form-group dsmovie-form-group'>
             <label htmlFor='score'>Informe sua avaliação</label>
-            <select className='form-control' id='score'>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <select
+              className='form-select dsmovie-form-group'
+              aria-label='Default select example'
+            >
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
             </select>
           </div>
-          <div className='dsmovie-form-btn-container'>
-            <button type='submit' className='btn btn-primary dsmovie-btn'>
-              Salvar
+          <div className='d-grid gap-2 d-flex dsmovie-form-btn-container'>
+            <button className='btn btn-success dsmovie-form-btn' type='button'>
+              Salvar <FaCheck />
             </button>
+            <Link to={'/'}>
+              <button className='btn btn-danger dsmovie-form-btn' type='button'>
+                Cancelar <FaTimes />
+              </button>
+            </Link>
           </div>
         </form>
-        <button className='btn btn-primary dsmovie-btn mt-3'>Cancelar</button>
       </div>
     </div>
   );

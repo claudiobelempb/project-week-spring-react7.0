@@ -16,7 +16,7 @@ const MovieScore: React.FC<MovieScoreProps> = ({ score, count }) => {
       <MovieStars />
       {/* <FaStar /> */}
       {/* <MovieStars /> */}
-      <p className='dsmovie-score-count'>{count} avaliações</p>
+      <p className='dsmovie-score-count text-white fs-6'>{count} avaliações</p>
     </div>
   );
 };

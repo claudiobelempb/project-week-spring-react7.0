@@ -7,7 +7,7 @@ const Pagination: React.FC = () => {
         <button className='dsmovie-pagination-button' disabled={true}>
           <FaChevronLeft />
         </button>
-        <p>{`${1} de ${3}`}</p>
+        <p className='text-white fs-6'>{`${1} de ${3}`}</p>
         <button className='dsmovie-pagination-button' disabled={false}>
           {/* <FaChevronRight className='dsmovie-flip-horizontal' /> */}
           <FaChevronRight />

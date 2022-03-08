@@ -21,3 +21,26 @@
   display: flex;
   justify-content: center;
 }
+
+.dsmovie-form-btn {
+  /* background-color: var(--color-primary); */
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  transition: filter 0.2s;
+  border-radius: 1.25rem;
+}
+
+.dsmovie-form-btn:hover {
+  filter: brightness(0.9);
+  /* background-color: var(--color-primary); */
+}
+
+.dsmovie-form-btn-container svg {
+  margin-left: 0.5rem;
+}

@@ -21,22 +21,26 @@
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--color-primary);
   cursor: pointer;
+  border-radius: 1.25rem;
 }
 
 .dsmovie-pagination-button svg {
-  filter: brightness(0) saturate(100%) invert(26%) sepia(19%) saturate(7395%)
-    hue-rotate(234deg) brightness(89%) contrast(92%);
+  /* filter: brightness(0) saturate(100%) invert(26%) sepia(19%) saturate(7395%)
+    hue-rotate(234deg) brightness(89%) contrast(92%); */
+  color: #fff;
 }
 
 .dsmovie-pagination-button:disabled {
   border: 1px solid #c2c2c2;
   cursor: unset;
+  background: #c2c2c2;
+  cursor: not-allowed;
 }
 
 .dsmovie-pagination-button:disabled svg {

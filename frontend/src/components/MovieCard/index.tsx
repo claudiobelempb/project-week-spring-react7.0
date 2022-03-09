@@ -21,7 +21,7 @@ const MovieCard: React.FC = () => {
         alt={movie.title}
       />
       <div className='dsmovie-card-bottom-container'>
-        <h3 className='text-white fs-3'>{movie.title}</h3>
+        <h3 className='text-white'>{movie.title}</h3>
         <MovieScore score={movie.score} count={movie.count} />
         <Link to={`form/${movie.id}`}>
           <div className='btn btn-primary dsmovie-btn'>Avaliar</div>

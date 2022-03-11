@@ -1,12 +1,15 @@
 package br.com.surb.dsmovie.modules.movie.infra.jpa.entities;
 
+import br.com.surb.dsmovie.modules.score.infra.jpa.entities.Score;
 import br.com.surb.dsmovie.shared.enums.EnumTypeStatus;
 
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_movie")
@@ -30,6 +33,9 @@ public class Movie implements Serializable {
   private Instant updatedAt;
 
   private EnumTypeStatus status;
+
+  @OneToMany(mappedBy = "id.movie")
+  private final Set<Score> scores = new HashSet<>();
 
   public Movie(){}
 
@@ -107,6 +113,10 @@ public class Movie implements Serializable {
 
   public void setStatus(EnumTypeStatus status) {
     this.status = status;
+  }
+
+  public Set<Score> getScores() {
+    return scores;
   }
 
   @PrePersist

@@ -39,6 +39,14 @@ public class Score implements Serializable {
     this.status = status;
   }
 
+  public Score(Score movie){
+    id = movie.id;
+    value = movie.value;
+    createdAt = movie.createdAt;
+    updatedAt = movie.updatedAt;
+    status = movie.status;
+  }
+
   public void setMovie(Movie movie){
     id.setMovie(movie);
   }

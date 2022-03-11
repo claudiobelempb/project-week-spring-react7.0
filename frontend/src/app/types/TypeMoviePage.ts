@@ -1,7 +1,7 @@
-import { Movie } from './TypeMovie';
+import { TypeMovie } from './TypeMovie';
 
-export type MoviePage = {
-  content: Movie[];
+export type TypeMoviePage = {
+  content: TypeMovie[];
   last: boolean;
   totalPages: number;
   totalElements: number;

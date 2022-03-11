@@ -1,7 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import { List } from 'pages/List';
 import { Form } from 'pages/Form';
 import { NavBar } from 'components/NavBar';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
           <Route path=':movieId' element={<Form />} />
         </Route>
       </Routes>
+      <ToastContainer autoClose={3000} />
     </BrowserRouter>
   );
 }

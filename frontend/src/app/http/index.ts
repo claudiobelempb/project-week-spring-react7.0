@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { BASE_URL_API } from 'utils/constants';
+import { BASE_URL_API } from 'app/utils/constants';
 
 // const NEXT_PUBLIC = `${process.env.NEXT_PUBLIC}`;
 // const NEXT_PRODUCTION = `${process.env.NEXT_PRODUCTION}`;
@@ -7,8 +7,8 @@ import { BASE_URL_API } from 'utils/constants';
 // console.log('NEXT_PRODUCTION: ', NEXT_PRODUCTION);
 console.log(BASE_URL_API);
 
-const api = axios.create({
+const http = axios.create({
   baseURL: `${process.env.NEXT_PRODUCTION}`
 });
 
-export { api };
+export { http };

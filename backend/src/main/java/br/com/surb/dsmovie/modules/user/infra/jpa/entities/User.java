@@ -18,14 +18,10 @@ public class User implements Serializable {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-
   private String firstName;
-
   private String lastName;
-
   @Column(unique = true)
   private String email;
-
   private String password;
 
   @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")

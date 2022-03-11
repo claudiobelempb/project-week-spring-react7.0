@@ -17,7 +17,7 @@ public class MovieFindAllService {
   }
 
   @Transactional(readOnly = true)
-  public Page<MovieDTO> execute(Pageable pageable){
+  public Page<MovieDTO> run(Pageable pageable){
     Page<Movie> movies = movieRepository.findAll(pageable);
     return movies.map(MovieDTO::new);
   }

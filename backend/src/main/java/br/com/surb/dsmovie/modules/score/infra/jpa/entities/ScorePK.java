@@ -1,6 +1,5 @@
 package br.com.surb.dsmovie.modules.score.infra.jpa.entities;
 
-
 import br.com.surb.dsmovie.modules.movie.infra.jpa.entities.Movie;
 import br.com.surb.dsmovie.modules.user.infra.jpa.entities.User;
 
@@ -29,15 +28,12 @@ public class ScorePK implements Serializable {
   public Movie getMovie() {
     return movie;
   }
-
   public void setMovie(Movie movie) {
     this.movie = movie;
   }
-
   public User getUser() {
     return user;
   }
-
   public void setUser(User user) {
     this.user = user;
   }

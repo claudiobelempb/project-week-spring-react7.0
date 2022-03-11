@@ -22,7 +22,7 @@ public class MovieFindAllResource {
   public ResponseEntity<Page<MovieDTO>> handle(Pageable pageable)
   {
     /*PARAMETRISE: page, size, sort*/
-    Page<MovieDTO> dto = movieFindAllService.execute(pageable);
+    Page<MovieDTO> dto = movieFindAllService.run(pageable);
     return ResponseEntity.ok().body(dto);
   }
 }

@@ -1,6 +1,5 @@
 package br.com.surb.dsmovie.modules.score.infra.jpa.entities;
 
-
 import br.com.surb.dsmovie.modules.movie.infra.jpa.entities.Movie;
 import br.com.surb.dsmovie.modules.user.infra.jpa.entities.User;
 import br.com.surb.dsmovie.shared.enums.EnumTypeStatus;

@@ -2,8 +2,6 @@ package br.com.surb.dsmovie.modules.movie.infra.jpa.entities;
 
 import br.com.surb.dsmovie.shared.enums.EnumTypeStatus;
 
-
-
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;

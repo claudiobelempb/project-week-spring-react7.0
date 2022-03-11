@@ -15,12 +15,12 @@ const MovieCard: React.FC = () => {
 
   return (
     <div className='dsmovie-movie-card-container'>
-      <img
-        className='dsmovie-movie-card-image'
-        src={movie.image}
-        alt={movie.title}
-      />
       <div className='dsmovie-card-bottom-container'>
+        <img
+          className='dsmovie-movie-card-image'
+          src={movie.image}
+          alt={movie.title}
+        />
         <h3 className='text-white'>{movie.title}</h3>
         <MovieScore score={movie.score} count={movie.count} />
         <Link to={`form/${movie.id}`}>

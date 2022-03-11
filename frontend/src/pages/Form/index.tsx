@@ -15,13 +15,13 @@ const Form: React.FC = () => {
   return (
     <div className='dsmovie-form-container'>
       <img
-        className='dsmovie-movie-card-image'
+        className='dsmovie-movie-form-image'
         src={movie.image}
         alt={movie.title}
       />
-      <div className='dsmovie-card-bottom-container'>
-        <h3>{movie.title}</h3>
+      <div className='dsmovie-form-bottom-container'>
         <form className='dsmovie-form'>
+          <h3>{movie.title}</h3>
           <div className='form-group dsmovie-form-group'>
             <label htmlFor='email'>Informe seu email</label>
             <input

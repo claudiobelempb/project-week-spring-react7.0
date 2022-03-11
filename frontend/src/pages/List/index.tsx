@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { http } from 'app/http/';
+import { api } from 'app/http/';
 import { MovieCard } from 'components/MovieCard';
 import { Pagination } from 'components/Pagination';
 import { BASE_URL_API } from 'app/utils/constants';
@@ -20,7 +20,7 @@ const List: React.FC = () => {
   });
 
   useEffect(() => {
-    http
+    api
       .get(`${BASE_URL_API}/movies?size=12&page=${pageNumber}&sort=id`)
       .then(resp => {
         const data = resp.data as TypeMoviePage;

@@ -8,7 +8,7 @@ import { BASE_URL_API } from 'app/utils/constants';
 console.log(BASE_URL_API);
 
 const api = axios.create({
-  baseURL: `${process.env.NEXT_PRODUCTION}`
+  baseURL: `${process.env.BASE_URL_API}`
 });
 
 export { api };

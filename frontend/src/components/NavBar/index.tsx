@@ -11,13 +11,13 @@ const NavBar: React.FC = () => {
             <h1>DSMovie</h1>
           </Link>
           <a
-            href='https://github.com/devsuperior'
+            href='https://github.com/claudiobelempb/project-week-spring-react7.0'
             target='_blank'
             rel='noreferrer'
           >
             <div className='dsmovie-contact-container'>
               <GitHubIcon />
-              <p className='dsmovie-contact-link'>/devsuperior</p>
+              <p className='dsmovie-contact-link'>/claudiobelempb</p>
             </div>
           </a>
         </div>

@@ -1,14 +1,31 @@
+import { TypeMoviePage } from 'app/types/TypeMoviePage';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './styles.css';
-const Pagination: React.FC = () => {
+
+type PaginationProps = {
+  page: TypeMoviePage;
+  onChange: Function;
+};
+
+const Pagination: React.FC<PaginationProps> = ({ page, onChange }) => {
   return (
     <div className='dsmovie-pagination-container'>
       <div className='dsmovie-pagination-box'>
-        <button className='dsmovie-pagination-button' disabled={true}>
+        <button
+          onClick={() => onChange(page.number - 1)}
+          className='dsmovie-pagination-button'
+          disabled={page.first}
+        >
           <FaChevronLeft />
         </button>
-        <p className='text-white fs-6'>{`${1} de ${3}`}</p>
-        <button className='dsmovie-pagination-button' disabled={false}>
+        <p className='text-white fs-6'>{`${page.number + 1} de ${
+          page.totalPages
+        }`}</p>
+        <button
+          onClick={() => onChange(page.number + 1)}
+          className='dsmovie-pagination-button'
+          disabled={page.last}
+        >
           {/* <FaChevronRight className='dsmovie-flip-horizontal' /> */}
           <FaChevronRight />
         </button>

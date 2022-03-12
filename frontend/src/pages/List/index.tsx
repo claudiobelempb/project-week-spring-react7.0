@@ -28,9 +28,13 @@ const List: React.FC = () => {
       });
   }, [pageNumber]);
 
+  const handlePageChange = (newPageNumber: number) => {
+    setPageNumber(newPageNumber);
+  };
+
   return (
     <div className='container'>
-      <Pagination />
+      <Pagination page={page} onChange={handlePageChange} />
       <div className='row'>
         {page.content.map(movie => {
           return (
